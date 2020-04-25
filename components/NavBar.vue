@@ -1,14 +1,12 @@
 <template>
   <div>
-    <b-navbar toggleable="xl" fixed="top">
+    <b-navbar toggleable="xl" fixed="top" class="navBarclass">
       <b-navbar-brand
         :disabled="currentPage === 'index'"
         :to="{ name: 'index' }"
         class="logo navbarBrand"
         @click="getcurrentPage"
-      >
-        Y/
-        <span class="secondary-color">P</span>
+        >Y/<span class="secondary-color">P</span>
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" right></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -59,7 +57,7 @@
 export default {
   data() {
     return {
-      currentPage: ""
+      currentPage: '',
     };
   },
   mounted() {
@@ -68,12 +66,16 @@ export default {
   methods: {
     getcurrentPage() {
       this.currentPage = this.$nuxt.$route.name;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
+.navBarclass {
+  background-color: var(--main-bg-color);
+  z-index: 100;
+}
 .linklyDisabled {
   cursor: default;
   font-weight: 900;
@@ -94,7 +96,7 @@ export default {
   border: 0 !important;
 }
 .border {
-  font-family: "Avenir Black";
+  font-family: 'Avenir Black';
   font-size: 2em;
 }
 .navbarBrand {
@@ -125,7 +127,7 @@ export default {
 .ml-auto {
   letter-spacing: 0.15em;
   font-weight: 500;
-  font-family: "Avenir Black";
+  font-family: 'Avenir Black';
   font-size: 1em;
   text-decoration: none !important;
   color: var(--gray);
@@ -139,7 +141,7 @@ export default {
   }
 }
 .logo {
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: var(--gray);
   font-weight: 700;
 }

@@ -1,33 +1,26 @@
 <template>
-    <div class="bodyContainer">
+  <div>
     <div class="navBarDiv">
-    <NavBar />
+      <NavBar />
     </div>
     <div class="viewPortDiv">
-    <nuxt />
-  </div>
+      <nuxt />
+    </div>
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/NavBar';
 export default {
   components: {
-    NavBar
-  }
-}
+    NavBar,
+  },
+};
 </script>
 
 <style>
-.bodyContainer{
-  padding-top: 5em;
-}
-.navBarDiv {
-  padding-bottom: 5em;
-  z-index: 1;
-}
 .viewPortDiv {
-  padding-top: 5em;
+  padding-top: 3em;
 }
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

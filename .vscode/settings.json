@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "vetur.validation.template": false,
   "editor.codeActionsOnSave": {
