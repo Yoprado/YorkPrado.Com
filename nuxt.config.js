@@ -59,7 +59,9 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['vue-pdf'],
     extend (config, ctx) {
+      config.output.globalObject = 'this'
     }
   }
 }
