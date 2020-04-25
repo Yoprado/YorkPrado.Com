@@ -1,91 +1,125 @@
 <template>
-<div>
-  <b-navbar toggleable="lg">
-    <b-navbar-brand @click="getcurrentPage" :disabled="currentPage === 'index'" :to="{name: 'index'}" class="logo navbarBrand">
-        Y/<span class="secondary-color">P</span>
-    </b-navbar-brand>
-    <b-navbar-toggle target="nav-collapse" right></b-navbar-toggle>
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav class="ml-auto text-decoration-none" right>
-          <b-nav-item @click="getcurrentPage" :class="currentPage === 'Projects' ? 'linklyDisabled' : 'linkly'" :to="{name: 'Projects'}" >PROJECTS</b-nav-item>
-          <span class="border"> | </span>
-          <b-nav-item @click="getcurrentPage" :class="currentPage === 'FamilyRecipes' ? 'linklyDisabled' : 'linkly'" :to="{name: 'FamilyRecipes'}">FAMILY RECIPES</b-nav-item>
-          <span class="border"> | </span>
-          <b-nav-item @click="getcurrentPage" :class="currentPage === 'Photography' ? 'linklyDisabled' : 'linkly'" :to="{name: 'Photography'}">PHOTOGRAPHY</b-nav-item>
-          <span class="border"> | </span>
-          <b-nav-item @click="getcurrentPage" :class="currentPage === 'AboutMe' ? 'linklyDisabled' : 'linkly'" :to="{name: 'AboutMe'}">ABOUT ME</b-nav-item>
-          <span class="border"> | </span>
-          <b-nav-item @click="getcurrentPage" :class="currentPage === 'Resume' ? 'linklyDisabled' : 'linkly'" :to="{name: 'Resume'}">RESUME</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+  <div>
+    <b-navbar toggleable="xl" fixed="top">
+      <b-navbar-brand
+        :disabled="currentPage === 'index'"
+        :to="{ name: 'index' }"
+        class="logo navbarBrand"
+        @click="getcurrentPage"
+      >
+        Y/
+        <span class="secondary-color">P</span>
+      </b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse" right></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="ml-auto text-decoration-none" right>
+          <b-nav-item
+            :class="currentPage === 'Projects' ? 'linklyDisabled' : 'linkly'"
+            :to="{ name: 'Projects' }"
+            @click="getcurrentPage"
+            >PROJECTS</b-nav-item
+          >
+          <span class="border">|</span>
+          <b-nav-item
+            :class="
+              currentPage === 'FamilyRecipes' ? 'linklyDisabled' : 'linkly'
+            "
+            :to="{ name: 'FamilyRecipes' }"
+            @click="getcurrentPage"
+            >FAMILY RECIPES</b-nav-item
+          >
+          <span class="border">|</span>
+          <b-nav-item
+            :class="currentPage === 'Photography' ? 'linklyDisabled' : 'linkly'"
+            :to="{ name: 'Photography' }"
+            @click="getcurrentPage"
+            >PHOTOGRAPHY</b-nav-item
+          >
+          <span class="border">|</span>
+          <b-nav-item
+            :class="currentPage === 'AboutMe' ? 'linklyDisabled' : 'linkly'"
+            :to="{ name: 'AboutMe' }"
+            @click="getcurrentPage"
+            >ABOUT ME</b-nav-item
+          >
+          <span class="border">|</span>
+          <b-nav-item
+            :class="currentPage === 'Resume' ? 'linklyDisabled' : 'linkly'"
+            :to="{ name: 'Resume' }"
+            @click="getcurrentPage"
+            >RESUME</b-nav-item
+          >
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      currentPage: ''
-    }
+      currentPage: ""
+    };
+  },
+  mounted() {
+    this.currentPage = this.$nuxt.$route.name;
   },
   methods: {
-    getcurrentPage () {
-      this.currentPage = this.$nuxt.$route.name
+    getcurrentPage() {
+      this.currentPage = this.$nuxt.$route.name;
     }
-  },
-  mounted () {
-    this.currentPage = this.$nuxt.$route.name
   }
-}
+};
 </script>
 
 <style scoped>
-.linklyDisabled{
+.linklyDisabled {
   cursor: default;
   font-weight: 900;
-  padding-top: .4rem;
-  padding-left: .4rem;
-  padding-right: .4rem;
-  margin: .1rem .1rem .1rem .1rem;
+  padding-top: 0.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin: 0.1rem 0.1rem 0.1rem 0.1rem;
   text-align: right;
   text-decoration: none !important;
   color: var(--gray) !important;
 }
 .linklyDisabled a {
   border-bottom: 1px solid var(--pink);
-  padding-bottom: .05rem;
+  padding-bottom: 0.05rem;
   cursor: default;
 }
-.nav-link.disabled:hover{
+.nav-link.disabled:hover {
   border: 0 !important;
 }
-.border{
+.border {
   font-family: "Avenir Black";
   font-size: 2em;
 }
-.navbarBrand{
+.navbarBrand {
   color: var(--gray);
   text-decoration: none !important;
 }
-.navbarBrand:hover{
+.navbarBrand:hover {
   color: var(--pink);
   text-decoration: none !important;
 }
-.linkly, .linkly a{
-  padding-top: .4rem;
-  padding-bottom: .4rem;
-  padding-left: .4rem;
-  padding-right: .4rem;
-  margin: .1rem .1rem .1rem .1rem;
+.linkly,
+.linkly a {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin: 0.1rem 0.1rem 0.1rem 0.1rem;
   text-align: right;
   text-decoration: none !important;
   color: var(--gray) !important;
 }
-.linkly:hover{
-  padding: .2rem .2rem .2rem .2rem;
-  margin: .1rem .1rem .1rem .1rem;
-  border: .2rem solid var(--pink);
+.linkly:hover {
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+  border: 0.2rem solid var(--pink);
   border-radius: 1.2rem;
 }
 .ml-auto {
@@ -99,9 +133,9 @@ export default {
 .nav-item {
   text-align: right;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   .border {
-    display:none;
+    display: none;
   }
 }
 .logo {

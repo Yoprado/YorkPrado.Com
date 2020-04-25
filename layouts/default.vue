@@ -1,7 +1,11 @@
 <template>
-  <div>
+    <div class="bodyContainer">
+    <div class="navBarDiv">
     <NavBar />
+    </div>
+    <div class="viewPortDiv">
     <nuxt />
+  </div>
   </div>
 </template>
 
@@ -15,6 +19,16 @@ export default {
 </script>
 
 <style>
+.bodyContainer{
+  padding-top: 5em;
+}
+.navBarDiv {
+  padding-bottom: 5em;
+  z-index: 1;
+}
+.viewPortDiv {
+  padding-top: 5em;
+}
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;

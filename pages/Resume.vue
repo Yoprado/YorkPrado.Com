@@ -4,15 +4,10 @@
       <b-container class="bv-example-row">
         <b-row>
           <b-col cols="12">
-            <vue-pdf
-              class="pdf-class"
-              :src="pdfSrc"
-              :page="1"
-              @num-pages="pdfPageCount = $event"
-            ></vue-pdf>
+            <vue-pdf class="pdf-class" :src="pdfSrc" :page="1" @num-pages="pdfPageCount = $event" />
             <div v-if="pdfPageCount > 1">
               <div v-for="(pageNum, index) in pdfPageCount " :key="index">
-                <vue-pdf class="pdf-class" :src="pdfSrc" :page="pageNum" v-if="pageNum > 1"></vue-pdf>
+                <vue-pdf v-if="pageNum > 1" class="pdf-class" :src="pdfSrc" :page="pageNum" />
               </div>
             </div>
           </b-col>
@@ -23,19 +18,19 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
-      pdfSrc: '/YorkPrado2020.pdf',
+      pdfSrc: "/YorkPrado2020.pdf",
       pdfPageCount: 0
-    }
+    };
   }
-}
+};
 </script>
 <style scoped>
-.container{
+.container {
   display: block !important;
 }
-.pdf-class{
+.pdf-class {
   margin: 5em 1em 1em 1em;
 }
 </style>
