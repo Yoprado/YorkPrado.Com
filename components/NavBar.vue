@@ -1,21 +1,21 @@
 <template>
 <div>
   <b-navbar toggleable="lg">
-    <b-navbar-brand :to="{name: 'index'}" class="logo navbarBrand">
+    <b-navbar-brand @click="getcurrentPage" :disabled="currentPage === 'index'" :to="{name: 'index'}" class="logo navbarBrand">
         Y/<span class="secondary-color">P</span>
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse" right></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto text-decoration-none" right>
-          <b-nav-item class="linkly" :to="{name: 'AboutMe'}">About Me</b-nav-item>
+          <b-nav-item @click="getcurrentPage" :class="currentPage === 'Projects' ? 'linklyDisabled' : 'linkly'" :to="{name: 'Projects'}" >PROJECTS</b-nav-item>
           <span class="border"> | </span>
-          <b-nav-item :to="{name: 'Projects'}" class="linkly">Projects</b-nav-item>
+          <b-nav-item @click="getcurrentPage" :class="currentPage === 'FamilyRecipes' ? 'linklyDisabled' : 'linkly'" :to="{name: 'FamilyRecipes'}">FAMILY RECIPES</b-nav-item>
           <span class="border"> | </span>
-          <b-nav-item :to="{name: 'FamilyRecipes'}" class="linkly">Family Recipes</b-nav-item>
+          <b-nav-item @click="getcurrentPage" :class="currentPage === 'Photography' ? 'linklyDisabled' : 'linkly'" :to="{name: 'Photography'}">PHOTOGRAPHY</b-nav-item>
           <span class="border"> | </span>
-          <b-nav-item :to="{name: 'Photography'}" class="linkly">Photography</b-nav-item>
+          <b-nav-item @click="getcurrentPage" :class="currentPage === 'AboutMe' ? 'linklyDisabled' : 'linkly'" :to="{name: 'AboutMe'}">ABOUT ME</b-nav-item>
           <span class="border"> | </span>
-          <b-nav-item :to="{name: 'Resume'}" class="linkly">Resume</b-nav-item>
+          <b-nav-item @click="getcurrentPage" :class="currentPage === 'Resume' ? 'linklyDisabled' : 'linkly'" :to="{name: 'Resume'}">RESUME</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -23,10 +23,43 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      currentPage: ''
+    }
+  },
+  methods: {
+    getcurrentPage () {
+      this.currentPage = this.$nuxt.$route.name
+    }
+  },
+  mounted () {
+    this.currentPage = this.$nuxt.$route.name
+  }
+}
 </script>
 
 <style scoped>
+.linklyDisabled{
+  cursor: default;
+  font-weight: 900;
+  padding-top: .4rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  margin: .1rem .1rem .1rem .1rem;
+  text-align: right;
+  text-decoration: none !important;
+  color: var(--gray) !important;
+}
+.linklyDisabled a {
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: .05rem;
+  cursor: default;
+}
+.nav-link.disabled:hover{
+  border: 0 !important;
+}
 .border{
   font-family: "Avenir Black";
   font-size: 2em;
@@ -51,12 +84,13 @@ export default {}
 }
 .linkly:hover{
   padding: .2rem .2rem .2rem .2rem;
+  margin: .1rem .1rem .1rem .1rem;
   border: .2rem solid var(--pink);
   border-radius: 1.2rem;
 }
 .ml-auto {
-  letter-spacing: 0.1em;
-  font-weight: 600;
+  letter-spacing: 0.15em;
+  font-weight: 500;
   font-family: "Avenir Black";
   font-size: 1em;
   text-decoration: none !important;
