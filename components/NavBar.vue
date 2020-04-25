@@ -14,7 +14,6 @@
           <b-nav-item
             :class="currentPage === 'Projects' ? 'linklyDisabled' : 'linkly'"
             :to="{ name: 'Projects' }"
-            @click="getcurrentPage"
             >PROJECTS</b-nav-item
           >
           <span class="border">|</span>
@@ -23,28 +22,24 @@
               currentPage === 'FamilyRecipes' ? 'linklyDisabled' : 'linkly'
             "
             :to="{ name: 'FamilyRecipes' }"
-            @click="getcurrentPage"
             >FAMILY RECIPES</b-nav-item
           >
           <span class="border">|</span>
           <b-nav-item
             :class="currentPage === 'Photography' ? 'linklyDisabled' : 'linkly'"
             :to="{ name: 'Photography' }"
-            @click="getcurrentPage"
             >PHOTOGRAPHY</b-nav-item
           >
           <span class="border">|</span>
           <b-nav-item
             :class="currentPage === 'AboutMe' ? 'linklyDisabled' : 'linkly'"
             :to="{ name: 'AboutMe' }"
-            @click="getcurrentPage"
             >ABOUT ME</b-nav-item
           >
           <span class="border">|</span>
           <b-nav-item
             :class="currentPage === 'Resume' ? 'linklyDisabled' : 'linkly'"
             :to="{ name: 'Resume' }"
-            @click="getcurrentPage"
             >RESUME</b-nav-item
           >
         </b-navbar-nav>
@@ -59,6 +54,11 @@ export default {
     return {
       currentPage: '',
     };
+  },
+  watch: {
+    $route() {
+      this.getcurrentPage();
+    },
   },
   mounted() {
     this.currentPage = this.$nuxt.$route.name;
