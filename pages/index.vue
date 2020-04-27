@@ -3,16 +3,16 @@
     <b-jumbotron class="headerClass">
       <template v-slot:header>
         <p>Hello, <b class="boldest">I'm York.</b></p>
-        <p>I'm a Solutions Architect from San Francisco.</p>
+        <p>I'm a Solutions Architect from Oakland, CA.</p>
       </template>
       <template v-slot:lead>
         <p class="lead-text">
-          My work has sent me all over the world, working with clients to
-          deliver meaningful, scalable web solutions from idea inception, pilot,
-          to full scale production. My experience involves full stack
-          development specializing in analytics visualizations and emerging
-          technologies such as IoT, 3D printing, cognitive computing, natural
-          language processing, and augmented/virtual reality.
+          My work has sent me all over the world, engaging with clients to
+          deliver meaningful, scalable web solutions from ideation, to pilot, to
+          full scale production. My experience involves full stack development
+          specializing in analytics visualizations and emerging technologies
+          such as IoT, 3D printing, cognitive computing, natural language
+          processing, and augmented/virtual reality.
         </p>
       </template>
       <b-button class="projectButton" :to="{ name: 'Projects' }"
