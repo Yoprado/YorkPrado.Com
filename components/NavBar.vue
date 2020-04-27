@@ -127,7 +127,7 @@ export default {
 .ml-auto {
   letter-spacing: 0.15em;
   font-weight: 500;
-  font-family: 'Avenir Black';
+  font-family: 'Lato';
   font-size: 1em;
   text-decoration: none !important;
   color: var(--gray);

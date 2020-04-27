@@ -1,5 +1,5 @@
 export const state = () => ({
-  projectContent: [
+  photographyContent: [
     {
       id: 0,
       title: 'Amsterdam, Netherlands',
@@ -40,7 +40,7 @@ export const state = () => ({
       id: 6,
       title: 'London, England',
       description: '',
-      image: '/Photography/Amsterdam.JPG',
+      image: '/Photography/London.JPG',
     },
     {
       id: 7,
@@ -52,7 +52,7 @@ export const state = () => ({
       id: 8,
       title: 'Prague, Czech Republic',
       description: '',
-      image: '/Photography/Amsterdam.JPG',
+      image: '/Photography/Prague.JPG',
     },
     {
       id: 9,
@@ -62,6 +62,21 @@ export const state = () => ({
     },
   ],
 });
-export const getters = {};
+export const getters = {
+  getRandomFour: state => {
+    // eslint-disable-next-line no-var
+    var arr = [];
+    const photoarr = [];
+    while (arr.length < 4) {
+      // eslint-disable-next-line no-var
+      var r = Math.floor(Math.random() * state.photographyContent.length);
+      if (!arr.includes(r)) {
+        arr.push(r);
+        photoarr.push(state.photographyContent[r]);
+      }
+    }
+    return photoarr;
+  },
+};
 export const mutations = () => ({});
 export const actions = () => ({});
