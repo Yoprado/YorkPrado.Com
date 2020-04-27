@@ -17,7 +17,7 @@
         >See My Projects</b-button
       >
     </b-jumbotron>
-    <b-container fluid class="project-container">
+    <b-container v-show="showImg === 4" fluid class="project-container">
       <b-row>
         <b-col
           v-for="photo in getRandomFour"
@@ -29,11 +29,13 @@
           sm="12"
           cols="12"
         >
-          <b-card :img-src="photo.image" img-alt="Image" img-top class="h-100">
-            <template v-slot:footer>
-              <small class="text-muted">{{ photo.title }}</small>
-            </template>
-          </b-card>
+          <client-only>
+            <VLazyImage
+              class="card-img-top h-100"
+              :src="photo.image"
+              :src-placeholder="photo.tinyimg"
+            />
+          </client-only>
         </b-col>
       </b-row>
     </b-container>
@@ -42,11 +44,38 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import VLazyImage from 'v-lazy-image';
 export default {
+  components: {
+    VLazyImage,
+  },
+  data() {
+    return {
+      showImg: 0,
+    };
+  },
   computed: {
     ...mapGetters({
       getRandomFour: 'Photography/getRandomFour',
     }),
+  },
+  mounted() {
+    // eslint-disable-next-line prefer-const
+    let setOfImages = [];
+    for (let i = 0; i < this.getRandomFour.length; i++) {
+      const img = new Image();
+      const img2 = new Image();
+      img.onload = this.addShowImg();
+      img.src = this.getRandomFour[i].tinyimg;
+      img2.src = this.getRandomFour[i].image;
+      setOfImages.push(img);
+      setOfImages.push(img2);
+    }
+  },
+  methods: {
+    addShowImg() {
+      this.showImg++;
+    },
   },
 };
 </script>
@@ -57,7 +86,7 @@ export default {
 }
 .card-body,
 .card-footer {
-  display: none;
+  display: block;
 }
 .lead {
   padding-top: 2rem;
@@ -100,5 +129,13 @@ export default {
 .card-container {
   padding-left: 0em;
   padding-right: 0em;
+}
+.v-lazy-image {
+  filter: blur(20px);
+  transition: filter 1.1s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0);
 }
 </style>
