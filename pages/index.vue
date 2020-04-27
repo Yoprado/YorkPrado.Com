@@ -2,18 +2,16 @@
   <div>
     <b-jumbotron class="headerClass">
       <template v-slot:header>
-        <p>Hello, <b class="boldest">I'm York.</b></p>
-        <p>I'm a Solutions Architect from Oakland, CA.</p>
+        Hello, <b class="boldest">I'm York.</b><br />
+        I'm a Solutions Architect from Oakland, CA.
       </template>
       <template v-slot:lead>
-        <p class="lead-text">
-          My work has sent me all over the world, engaging with clients to
-          deliver meaningful, scalable web solutions from ideation, to pilot, to
-          full scale production. My experience involves full stack development
-          specializing in analytics visualizations and emerging technologies
-          such as IoT, 3D printing, cognitive computing, natural language
-          processing, and augmented/virtual reality.
-        </p>
+        My work has sent me all over the world, engaging with clients to deliver
+        meaningful, scalable web solutions from ideation, to pilot, to full
+        scale production. My experience involves full stack development
+        specializing in analytics visualizations and emerging technologies such
+        as IoT, 3D printing, cognitive computing, natural language processing,
+        and augmented/virtual reality.
       </template>
       <b-button class="projectButton" :to="{ name: 'Projects' }"
         >See My Projects</b-button
@@ -29,7 +27,7 @@ export default {
 </script>
 
 <style scoped>
-.lead-text {
+.lead {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
