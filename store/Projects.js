@@ -17,7 +17,7 @@ export const state = () => ({
     },
     {
       id: 1,
-      title: 'Exploring and Visualizing IoT hardware from Samsara',
+      title: 'Exploring IoT hardware from Samsara',
       description:
         "I got the chance to explore Samsara's SaaS based Rest API as well as their fleet tracking hardware. In order to visualize the data, I decided to also explore the DC.js library.",
       keywords: [

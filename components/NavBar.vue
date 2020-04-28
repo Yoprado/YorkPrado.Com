@@ -96,7 +96,7 @@ export default {
   border: 0 !important;
 }
 .border {
-  font-family: 'Avenir Black';
+  font-family: 'Lato';
   font-size: 2em;
 }
 .navbarBrand {

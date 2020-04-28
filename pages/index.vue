@@ -6,7 +6,7 @@
         I'm a Solutions Architect from Oakland, CA.
       </template>
       <template v-slot:lead>
-        My work has sent me all over the world, engaging with clients to deliver
+        My work has sent me all over the world, working with clients to deliver
         meaningful, scalable web solutions from ideation, to pilot, to full
         scale production. My experience involves full stack development
         specializing in analytics visualizations and emerging technologies such
@@ -54,6 +54,56 @@ export default {
       showImg: 0,
     };
   },
+  head() {
+    return {
+      title: "York Prado's Homepage",
+      meta: [
+        { property: 'og:title', content: "York Prado's Homepage" },
+        { property: 'og:site_name', content: 'YorkPrado.com' },
+        // The list of types is available here: http://ogp.me/#types
+        { property: 'og:type', content: 'website' },
+        // Should the the same as your canonical link, see below.
+        {
+          property: 'og:url',
+          content: 'https://www.yorkprado.com',
+        },
+        {
+          property: 'og:image',
+          content: '/Project/PersonalWebsite.png',
+        },
+        // Often the same as your meta description, but not always.
+        {
+          property: 'og:description',
+          content:
+            "York Prado, Oakland Based Technology Consultant's Personal Website.",
+        },
+
+        { name: 'twitter:title', content: "York Prado's Homepage" },
+        {
+          name: 'twitter:description',
+          content:
+            "York Prado, Oakland Based Technology Consultant's Personal Website.",
+        },
+        { name: 'twitter:image', content: '/Project/PersonalWebsite.png' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'description',
+          content:
+            "York Prado, Oakland Based Technology Consultant's Personal Website.",
+        },
+        { itemprop: 'name', content: "York Prado's Homepage" },
+        {
+          itemprop: 'description',
+          content:
+            "York Prado, Oakland Based Technology Consultant's Personal Website.",
+        },
+        {
+          itemprop: 'image',
+          content: '/Project/PersonalWebsite.png',
+        },
+      ],
+    };
+  },
   computed: {
     ...mapGetters({
       getRandomFour: 'Photography/getRandomFour',
@@ -91,10 +141,13 @@ export default {
 .lead {
   padding-top: 2rem;
   padding-bottom: 1rem;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  font-family: 'Lato';
 }
 .headerClass {
   padding-top: 6rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   margin-bottom: 0em;
 }
 .projectButton {
