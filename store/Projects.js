@@ -4,7 +4,7 @@ export const state = () => ({
       id: 0,
       title: 'Building My Personal Website with Vuejs',
       description:
-        'My last project had my developers work on Vue.js, so I took it upon myself to learn the framework as well and create my personal webiste from it.',
+        'My last project had my developers work on Vue.js, so I took it upon myself to learn the framework as well and create my personal website from it.',
       keywords: [
         'JavaScript',
         'Vuejs',

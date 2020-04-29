@@ -3,16 +3,22 @@
     <div>
       <b-container fluid class="project-container">
         <b-row>
-          <b-col class="card-container" lg="6" xl="6" md="12" sm="12" cols="12">
+          <b-col
+            class="card-container"
+            lg="12"
+            xl="12"
+            md="12"
+            sm="12"
+            cols="12"
+          >
             <client-only>
               <VLazyImage
-                class="card-img-top h-100"
+                class="card-img-top"
                 src="/PradoBrothers.jpg"
                 src-placeholder="/PradoBrothers.png"
+                align="left"
               />
             </client-only>
-          </b-col>
-          <b-col>
             <h1 class="display-3">About Me</h1>
             <p class="lead">
               My name is York Prado. I was born and raised in Washington, DC and
@@ -29,12 +35,7 @@
               lies at the intersection of emerging technologies and client
               delivery, working with businesses to develop meaningful technical
               solutions.
-              <br /><br /></p
-          ></b-col>
-        </b-row>
-        <b-row>
-          <b-col>
-            <p class="lead">
+              <br /><br />
               My last four years at Deloitte have been dedicated to developing
               and leading Internet of Things(IoT) implementation, mostly in the
               smart manufacturing space. This experience takes me around the
@@ -42,8 +43,13 @@
               to pilot, to full scale production. I am constantly curious and
               learning, hoping to see what comes next in the world of
               technology.
-              <br /><br /></p
-          ></b-col>
+              <br /><br />
+            </p>
+          </b-col>
+          <b-col> </b-col>
+        </b-row>
+        <b-row>
+          <b-col> <p class="lead"></p></b-col>
         </b-row>
       </b-container>
     </div>
@@ -129,6 +135,16 @@ export default {
 .project-container {
   background-color: #e9ecef;
   padding-top: 3em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+}
+.card-img-top {
+  margin-right: 1.75em;
+  max-width: 950px;
+}
+
+@media screen and (max-width: 1400px) {
+  .card-img-top {
+    max-width: 100%;
+  }
 }
 </style>
