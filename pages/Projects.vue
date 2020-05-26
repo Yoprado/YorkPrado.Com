@@ -72,13 +72,13 @@ export default {
 }
 .card-container {
   padding-bottom: 1.5em;
-  background: var(--main-bg-color);
+  background: var(--secondary-bg-color);
   border-left: 1px solid rgba(106, 112, 113, 0.3);
   border-right: 1px solid rgba(106, 112, 113, 0.3);
 }
 .card {
   border: 0px;
-  background: var(--main-bg-color);
+  background: whitesmoke;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
@@ -95,7 +95,7 @@ export default {
   font-size: 1.2em;
 }
 .card .card-footer {
-  background: var(--main-bg-color);
+  background: whitesmoke;
   border: 0px;
 }
 .display-3 {

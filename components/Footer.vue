@@ -7,16 +7,16 @@
       </b-col>
       <b-col lg="4" xl="4" md="4" sm="4" cols="5" class="footerIconDiv">
         <a href="https://github.com/Yoprado/">
-          <img class="footerIcon" src="Footer/github.png" />
+          <img class="footerIcon" src="~/static/Footer/github.png" />
         </a>
         <a href="https://www.instagram.com/yoprado87">
-          <img class="footerIcon" src="Footer/instagram.png" />
+          <img class="footerIcon" src="~/static/Footer/instagram.png" />
         </a>
         <a href="https://www.linkedin.com/in/yoprado/">
-          <img class="footerIcon" src="Footer/linkedin.png" />
+          <img class="footerIcon" src="~/static/Footer/linkedin.png" />
         </a>
         <nuxt-link to="/photodump">
-          <img class="footerIcon" src="Footer/photogallery.png" />
+          <img class="footerIcon" src="~/static/Footer/photogallery.png" />
         </nuxt-link>
       </b-col>
     </b-row>

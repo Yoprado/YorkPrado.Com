@@ -1,5 +1,5 @@
 <template>
-  <div class="indexClass">
+  <div class="indexClass vh-90">
     <b-jumbotron class="headerClass">
       <template v-slot:header>
         Hello, <b class="boldest">I'm York.</b><br />

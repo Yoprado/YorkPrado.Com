@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex flex-column sticky-footer-wrapper">
     <div class="navBarDiv">
       <NavBar />
     </div>
@@ -22,8 +22,14 @@ export default {
 </script>
 
 <style>
+body,
+.sticky-footer-wrapper {
+  min-height: 99vh;
+}
 .viewPortDiv {
   padding-top: 0em;
+  flex: 1 1 auto;
+  background-color: var(--secondary-bg-color);
 }
 html {
   font-size: 16px;

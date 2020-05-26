@@ -1,7 +1,17 @@
 <template>
-  <div>test</div>
+  <Header :header-text="header"> </Header>
 </template>
 
-<script></script>
+<script>
+import Header from '~/components/Header.vue';
+export default {
+  components: { Header },
+  data() {
+    return {
+      header: 'Photo Dump Project',
+    };
+  },
+};
+</script>
 
 <style scoped></style>
