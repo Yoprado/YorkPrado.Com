@@ -27,7 +27,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-pdf.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/vue-pdf.js', mode: 'client' },
+    { src: '~/plugins/instantsearch.js', mode: 'client' },
+  ],
   /*
    ** Nuxt.js dev-modules
    */
