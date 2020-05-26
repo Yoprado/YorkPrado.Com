@@ -7,15 +7,9 @@ This is York Prado, Solutions Engineer at Algolia. I'll be happy to assist you i
 
  
 
-> [**What is a record?**](https://www.algolia.com/doc/faq/basics/what-is-a-record/)
+* [**What is a record?**](https://www.algolia.com/doc/faq/basics/what-is-a-record/)- A record is an object you add to an index and want to search for. It can contain any number of attributes.
 
-> A record is an object you add to an index and want to search for. It can contain any number of attributes.
-
- 
-
-> [**What is an index?**](https://www.algolia.com/doc/faq/basics/what-is-an-index/)
-
-> An index is the place where the data used by a search engine is stored.
+* [**What is an index?**](https://www.algolia.com/doc/faq/basics/what-is-an-index/) - An index is the place where the data used by a search engine is stored.
 
  
 
@@ -67,7 +61,7 @@ I hear what you’re saying about the additional clicks per action you now need 
 
  
 
-If you have developers on your team, I do recommend automating your process by using our APIs for [deleting]() https://www.algolia.com/doc/api-reference/api-methods/delete-index/) and [clearing](https://www.algolia.com/doc/api-reference/api-methods/clear-objects/?language=javascript) indexes. We support a number of different languages out of the box and this can help automate away a lot of the iteration slowdowns you may be facing.
+If you have developers on your team, I do recommend automating your process by using our APIs for [deleting](https://www.algolia.com/doc/api-reference/api-methods/delete-index/) and [clearing](https://www.algolia.com/doc/api-reference/api-methods/clear-objects/?language=javascript) indexes. We support a number of different languages out of the box and this can help automate away a lot of the iteration slowdowns you may be facing.
 
  
 
