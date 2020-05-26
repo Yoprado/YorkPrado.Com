@@ -67,7 +67,7 @@ I hear what you’re saying about the additional clicks per action you now need 
 
  
 
-If you have developers on your team, I do recommend automating your process by using our APIs for (deleting)[ https://www.algolia.com/doc/api-reference/api-methods/delete-index/] and (clearing)[ https://www.algolia.com/doc/api-reference/api-methods/clear-objects/?language=javascript] indexes. We support a number of different languages out of the box and this can help automate away a lot of the iteration slowdowns you may be facing.
+If you have developers on your team, I do recommend automating your process by using our APIs for [deleting]() https://www.algolia.com/doc/api-reference/api-methods/delete-index/) and [clearing](https://www.algolia.com/doc/api-reference/api-methods/clear-objects/?language=javascript) indexes. We support a number of different languages out of the box and this can help automate away a lot of the iteration slowdowns you may be facing.
 
  
 
