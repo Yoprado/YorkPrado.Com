@@ -21,11 +21,7 @@ Lastly, let's go over what type of metrics would be useful for custom ranking. L
 
  
 
-> [**Custom Ranking**](https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/)
-
-> Custom ranking is a direct and powerful way to adapt Algolia to your business. When you classify records with business metrics such as popularity or rating, your best products appear higher in search results...
-
-> Typical custom ranking attributes include number of sales, views, likes, ratings, release date, etc. Any Boolean or numeric attribute works with custom ranking.
+* [**Custom Ranking**](https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/) - Custom ranking is a direct and powerful way to adapt Algolia to your business. When you classify records with business metrics such as popularity or rating, your best products appear higher in search results...Typical custom ranking attributes include number of sales, views, likes, ratings, release date, etc. Any Boolean or numeric attribute works with custom ranking.
 
  
 
