@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="familyRecipesClass">
     <div>
       <b-jumbotron class="headerClass">
         <template v-slot:header>
@@ -120,5 +120,8 @@ export default {
   letter-spacing: 0.15em;
   font-weight: 500;
   font-family: 'Lato';
+}
+.familyRecipesClass {
+  background: var(--secondary-bg-color);
 }
 </style>

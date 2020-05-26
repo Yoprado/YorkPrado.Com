@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="indexClass">
     <b-jumbotron class="headerClass">
       <template v-slot:header>
         Hello, <b class="boldest">I'm York.</b><br />
@@ -190,5 +190,8 @@ export default {
 
 .v-lazy-image-loaded {
   filter: blur(0);
+}
+.indexClass {
+  background: var(--secondary-bg-color);
 }
 </style>

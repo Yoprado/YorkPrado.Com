@@ -6,21 +6,24 @@
     <div class="viewPortDiv">
       <nuxt />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
 export default {
   components: {
     NavBar,
+    Footer,
   },
 };
 </script>
 
 <style>
 .viewPortDiv {
-  padding-top: 3em;
+  padding-top: 0em;
 }
 html {
   font-size: 16px;

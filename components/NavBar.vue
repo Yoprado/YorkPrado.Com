@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="xl" fixed="top" class="navBarclass">
+    <b-navbar toggleable="xl" class="navBarclass">
       <b-navbar-brand
         :disabled="currentPage === 'index'"
         :to="{ name: 'index' }"
@@ -141,7 +141,7 @@ export default {
   }
 }
 .logo {
-  font-size: 4.5rem;
+  font-size: 2.25rem;
   color: var(--gray);
   font-weight: 700;
 }

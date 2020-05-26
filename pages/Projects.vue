@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="projectsClass">
     <b-jumbotron class="headerClass">
       <template v-slot:header>
         Side Projects and Hobbies
@@ -68,7 +68,7 @@ export default {
 </script>
 <style scoped>
 .project-container {
-  padding-top: 5em;
+  padding-top: 0em;
 }
 .card-container {
   padding-bottom: 1.5em;
@@ -81,6 +81,7 @@ export default {
   background: var(--main-bg-color);
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1rem;
 }
 .card-body .card-title {
   font-family: 'Georgia', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -112,5 +113,8 @@ export default {
   padding-top: 3rem;
   padding-bottom: 2rem;
   margin-bottom: 4em;
+}
+.projectsClass {
+  background: var(--secondary-bg-color);
 }
 </style>

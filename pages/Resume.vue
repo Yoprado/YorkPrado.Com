@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="resumeClass">
     <client-only>
       <b-container class="bv-example-row">
         <b-row>
@@ -74,5 +74,8 @@ export default {
   padding-top: 2em;
   text-align: center;
   padding-bottom: 2em;
+}
+.resumeClass {
+  background: var(--secondary-bg-color);
 }
 </style>
