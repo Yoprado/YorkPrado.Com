@@ -1,6 +1,7 @@
+# Email Response 1
+
 Hello George!
 
- 
 
 This is York Prado, Solutions Engineer at Algolia. I'll be happy to assist you in getting to know more about what records and indexes are to get you started on your search engine journey. Quickly looking at Algolia's FAQ section, I pulled out these definitions for you:
 
@@ -50,9 +51,9 @@ York Prado
 
  
 
- 
+ ---
 
- 
+ # Email Response 2
 
 Hello Matt,
 
@@ -80,9 +81,9 @@ York Prado
 
  
 
- 
+ ---
 
- 
+ # Email Response 3
 
 Hello Leo,
 
