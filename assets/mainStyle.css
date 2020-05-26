@@ -28,7 +28,7 @@ body {
 .PDSearchBoxInput {
   border-color: var(--pink);
   border-radius: 25px;
-  width:90%;
+  width:100%;
   height:2.25em;
   font-size:1.5em;
   text-indent: .6em;
@@ -55,4 +55,13 @@ body {
 
 .PDSearchBoxReset {
   display:none;
+}
+
+@media screen and (max-width: 768px) {
+  .PDSearchBox{
+    width:100%;
+    margin:auto;
+    padding-bottom:1em;
+    padding-left:2em;
+  }
 }
