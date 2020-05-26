@@ -23,13 +23,17 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/mainStyle.css'],
+  css: [
+    '~/assets/mainStyle.css',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     { src: '~/plugins/vue-pdf.js', mode: 'client' },
     { src: '~/plugins/instantsearch.js', mode: 'client' },
+    { src: '~/plugins/fontawesome.js', mode: 'client' },
   ],
   /*
    ** Nuxt.js dev-modules

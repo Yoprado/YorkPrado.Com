@@ -24,3 +24,35 @@ body {
 .navBar {
   padding: 0rem 1rem;
 }
+
+.PDSearchBoxInput {
+  border-color: var(--pink);
+  border-radius: 25px;
+  width:90%;
+  height:2.25em;
+  font-size:1.5em;
+  text-indent: .6em;
+}
+.PDSearchBoxInput:focus {
+  border-color: var(--pink) !important;
+  border-radius: 25px;
+  outline: none;
+}
+.PDSearchBox{
+  width:50%;
+  margin:auto;
+  padding-bottom:1em;
+}
+
+.PDSearchBoxInput p{
+  font-size:2.5em;
+  text-indent: 10px;
+}
+
+.PDSearchBoxSubmit {
+  display:none;
+}
+
+.PDSearchBoxReset {
+  display:none;
+}
