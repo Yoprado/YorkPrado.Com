@@ -5,13 +5,22 @@
         Side Projects and Hobbies
       </template>
       <template v-slot:lead>
-        Currently my project work has me deliver smart factory projects all
-        across the States. Beyond that work and travel, my passions include
-        exploring emerging technologies, developing analytics visualizations,
-        and all things IoT. I plan on further extending out this page into
-        individual side project pages to describe my journey in each project and
-        share what I can.
-        <i> Stay Tuned!</i>
+        In addition to managing a professional services team that delivers
+        integrations using a modern low-code SaaS platform for enterprise-level
+        customers, I also love to work on side projects and explore new
+        technologies in my spare time.
+        <br /><br />
+        On this page, you can learn more about my personal projects and
+        technical endeavors outside of my job. From building small applications
+        to experimenting with cutting-edge technologies, I'm always looking for
+        new ways to expand my skills and knowledge.
+        <br /><br />
+        Currently, I'm in the process of developing individual pages for each of
+        my side projects to provide more details about my journey and share what
+        I've learned along the way. So stay tuned for more updates!
+        <br /><br />
+        If you have any questions or want to discuss a potential collaboration,
+        feel free to reach out to me. Thanks for visiting!
       </template>
     </b-jumbotron>
 

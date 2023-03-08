@@ -6,13 +6,16 @@
           Family Recipes
         </template>
         <template v-slot:lead>
-          I am proud to be Peruvian American, and if you've had the pleasure of
-          eating with a family of us, you know how much we love food. I am
-          dedicating this page to my own family's recipes (partly so I don't
-          have to keep on bothering my mother for the ingredients). I plan on
-          splitting this page out to go in depth on the cooking process and
-          recipe. I welcome any suggestions and of course,
-          <i>Stay tuned!</i>
+          As a proud Peruvian American, I come from a family that loves food. If
+          you've ever had the pleasure of sharing a meal with us, you know
+          exactly what I mean! That's why I'm dedicating this page to my own
+          family's recipes - partly to preserve our culinary traditions, and
+          partly so I don't have to keep bothering my mother for the
+          ingredients. On this page, I plan on sharing detailed cooking
+          processes and ingredient lists, so you can recreate these delicious
+          dishes in your own kitchen. I welcome any suggestions you may have,
+          and invite you to stay tuned as I continue to add more of my family's
+          favorite recipes.
         </template>
       </b-jumbotron>
     </div>

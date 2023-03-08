@@ -24,8 +24,8 @@
           <b-col class="button-col"
             ><b-button
               class="projectButton"
-              href="/YorkPrado2020.pdf"
-              download="YorkPradoResume.pdf"
+              href="/York_Prado_Resume_2023.pdf"
+              download="York_Prado_Resume_2023.pdf"
               >Download Resume</b-button
             ></b-col
           >
@@ -38,7 +38,7 @@
 export default {
   data() {
     return {
-      pdfSrc: '/YorkPrado2020.pdf',
+      pdfSrc: '/York_Prado_Resume_2023.pdf',
       pdfPageCount: 0,
     };
   },

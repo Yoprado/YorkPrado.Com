@@ -6,12 +6,17 @@
           Travel & Photography
         </template>
         <template v-slot:lead>
-          The last five years have been kind to me in that I've been able to
-          travel to 28 countries and counting! Growing up to a single mother in
-          a very latin household, I've been grateful for all the opportunities
-          I've been given. Beyond just photography, I plan on highlighting
-          restaurants, points of interest, and unique stories as I build this
-          page out more into individual pages. <i>Stay tuned!</i>
+          Over the past ten years, I've had the incredible opportunity to travel
+          to 28 countries and counting. As someone who grew up in a Latin
+          household with a single mother, I'm incredibly grateful for all of the
+          experiences that travel has afforded me. Through my photography, I
+          hope to capture the unique beauty of each destination I visit. But
+          this website is about more than just pretty pictures - I also plan on
+          highlighting great restaurants, must-see points of interest, and
+          sharing unique stories from my travels. Whether you're a fellow
+          adventurer or a recruiter looking to learn more about my skills and
+          interests, I invite you to stay tuned as I continue to build out this
+          site!
         </template>
       </b-jumbotron>
     </div>

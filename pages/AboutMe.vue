@@ -21,28 +21,28 @@
             </client-only>
             <h1 class="display-3">About Me</h1>
             <p class="lead">
-              My name is York Prado. I was born and raised in Washington, DC and
-              currently live in Oakland with my twin brother, Patric. We were
-              raised by a single mother who we dedicate all our good fortunes
-              to, even during these interesting times. Soon after we went off to
-              college, our mother developed empty nest syndrome and decided to
-              remarry and raise two more baby brothers (we are a beautiful
-              growing family).
+              Hi there, I'm York Prado! Originally from the Washington, DC Metro
+              Area, I now call Oakland home and live with my twin brother,
+              Patric. Growing up, we were raised by a single mother who later
+              remarried and had two more children, making us a family of six.
               <br /><br />
-              As for my work, I have been in consulting for the past ten years
-              of my career. I consider myself a solutions architect and a
-              tinkerer more than a full fledged software engineer. My expertise
-              lies at the intersection of emerging technologies and client
-              delivery, working with businesses to develop meaningful technical
-              solutions.
+              In my 12-year career, I've worked mainly in the consulting space,
+              with the bulk of my experience at Deloitte. I'm a technical
+              leader, manager, and solutions architect who specializes in
+              helping businesses develop meaningful technical solutions that
+              take advantage of emerging technologies. I enjoy working at the
+              intersection of technology and client delivery, and have
+              experience working with clients around the world to scale
+              solutions from ideation to full-scale production. solutions.
               <br /><br />
-              My last four years at Deloitte have been dedicated to developing
-              and leading Internet of Things(IoT) implementation, mostly in the
-              smart manufacturing space. This experience takes me around the
-              world working with with clients to scale solutions from ideation,
-              to pilot, to full scale production. I am constantly curious and
-              learning, hoping to see what comes next in the world of
-              technology.
+              For the past two and a half years, I've been leading a
+              professional services team in the enterprise space at Tray.io, a
+              startup. My team and I work with clients to develop and scale
+              solutions, and I'm constantly curious and learning about new
+              technologies and trends in the industry.
+              <br /><br />
+              Whether you're a friend or a recruiter, I'm excited to connect and
+              see where our paths might lead!
               <br /><br />
             </p>
           </b-col>

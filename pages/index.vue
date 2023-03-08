@@ -2,16 +2,26 @@
   <div class="indexClass vh-90">
     <b-jumbotron class="headerClass">
       <template v-slot:header>
-        Hello, <b class="boldest">I'm York.</b><br />
-        I'm a Solutions Architect from Oakland, CA.
+        Hi there, I'm <b class="boldest">York Prado</b>! <br /><br />
+        I am a Professional Services Leader and Solutions Architect Manager
+        based in
+        <b class="boldest"> Oakland, CA</b>, in the
+        <b class="boldest">Consulting and Product Space</b>.
       </template>
       <template v-slot:lead>
-        My work has sent me all over the world, working with clients to deliver
-        meaningful, scalable web solutions from ideation, to pilot, to full
-        scale production. My experience involves full stack development
-        specializing in analytics visualizations and emerging technologies such
-        as IoT, 3D printing, cognitive computing, natural language processing,
-        and augmented/virtual reality.
+        From ideation to pilot to full-scale production, I've spent the last 13
+        years leading the development of impactful and scalable web-based
+        solutions for customers on a global scale.
+        <br /><br />
+        With a keen focus on enterprise customer needs, my main skill sets
+        encompass the use of integrations with disparate SaaS platforms using
+        low-code solutions, and integrating IoT in an advanced manufacturing
+        environment. I have also leveraged cutting-edge technologies such as
+        IoT, 3D printing, cognitive computing, natural language processing, and
+        augmented/virtual reality. <br /><br />
+        I am passionate about helping my clients achieve success through
+        innovative solutions that solve complex business challenges. Let's work
+        together to build something great!
       </template>
       <b-button class="projectButton" :to="{ name: 'Projects' }"
         >See My Projects</b-button
